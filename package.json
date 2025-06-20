@@ -1,0 +1,28 @@
+{
+  "name": "fellowship_session2",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/iamrudro/fellowship_session2#readme",
+  "bugs": {
+    "url": "https://github.com/iamrudro/fellowship_session2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamrudro/fellowship_session2.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.5.0",
+    "nodemon": "^3.1.10"
+  }
+}

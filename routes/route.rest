@@ -1,0 +1,31 @@
+GET http://127.0.0.1:3000/subscribers
+
+###
+
+GET http://127.0.0.1:3000/subscribers/6854fed57aa168c15a8acb0b
+
+###
+
+POST http://127.0.0.1:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"Rudranil",
+    "subedToChannel":"Keploy"
+}
+
+
+###
+
+
+DELETE http://127.0.0.1:3000/subscribers/6854fed57aa168c15a8acb0b
+
+
+###
+
+PATCH  http://127.0.0.1:3000/subscribers/6854ff077aa168c15a8acb0e
+Content-Type: application/json
+
+{
+    "name":"2470276_Rudranil"
+}
