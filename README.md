@@ -14,6 +14,7 @@ Follow these steps to get the project running on your local machine using MongoD
    ```bash
    git clone https://github.com/iamrudro/fellowship_session2.git
    cd fellowship_session2
+   npm run devStart
    ```
 
 2. **Build , Run and test the endpoints of the Application:**
