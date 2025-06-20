@@ -1,28 +1,32 @@
+# Getting all Subscribers Route
 GET http://127.0.0.1:3000/subscribers
 
 ###
 
+# Getting Single Subscriber Route
 GET http://127.0.0.1:3000/subscribers/6854fed57aa168c15a8acb0b
 
 ###
 
+# Creating a new Subscriber
 POST http://127.0.0.1:3000/subscribers
 Content-Type: application/json
 
 {
-    "name":"Rudranil",
-    "subedToChannel":"Keploy"
+    "name":"Achanandhi",
+    "subedToChannel":"PewDiePie"
 }
 
 
 ###
 
-
+# Deleting a Subscriber
 DELETE http://127.0.0.1:3000/subscribers/6854fed57aa168c15a8acb0b
 
 
 ###
 
+# Update a existing subscriber
 PATCH  http://127.0.0.1:3000/subscribers/6854ff077aa168c15a8acb0e
 Content-Type: application/json
 
