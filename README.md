@@ -46,4 +46,11 @@ Once the application is running, you can interact with it using the following HT
 
 ---
 
+## 📸 Screenshot of MongoDB
+
+<div class="image-container">
+      <img alt="mongodb" src="https://github.com/user-attachments/assets/518037a4-eb17-407b-8c86-70d86e3bf5ce" width="500" height="300"/>
+</div>
+
+---
 
