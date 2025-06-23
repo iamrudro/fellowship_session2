@@ -1,19 +1,20 @@
-require('dotenv').config()
+const express = require('express');
+const mongoose = require('mongoose');
+const subscribersRouter = require('./routes/subscribers');
 
-const express = require('express')
-const app = express()
-const mongoose = require('mongoose')
+const app = express();
+app.use(express.json());
+app.use('/', subscribersRouter);
 
-mongoose.connect(process.env.DATABASE_URL)
-// ,{ useNewUrlParser: true }
-const db = mongoose.connection
-db.on('error', (error) => console.error(error))
-db.once('open', () => console.log('Connected to Database'))
+module.exports = app;
 
-app.use(express.json())
+if (require.main === module) {
+    mongoose.connect('mongodb://localhost/subscribers', { useNewUrlParser: true, useUnifiedTopology: true });
 
-const subscribersRouter = require('./routes/subscribers')
-app.use('/subscribers', subscribersRouter)
+    const db = mongoose.connection;
+    db.on('error', (error) => console.error(error));
+    db.once('open', () => console.log('Connected to Database'));
 
-
-app.listen(3000, () => console.log('Server Started'))
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => console.log(`Server Started on port ${PORT}`));
+}
