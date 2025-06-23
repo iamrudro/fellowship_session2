@@ -46,6 +46,13 @@ Once the application is running, you can interact with it using the following HT
 
 ---
 
+**Test the API endpoints of the Application:**
+   ```bash
+      npm test
+   ```
+
+---
+
 ## 📸 Screenshot of MongoDB
 
 <div class="image-container">
