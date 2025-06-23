@@ -14,12 +14,12 @@ Follow these steps to get the project running on your local machine using MongoD
    ```bash
    git clone https://github.com/iamrudro/fellowship_session2.git
    cd fellowship_session2
-   npm run devStart
    ```
 
 2. **Build , Run and test the endpoints of the Application:**
    ```bash
    npm install
+   npm run devStart
    ```
    ### Install REST CLient Extension in VSCode to interact with the APIs
 
@@ -46,4 +46,11 @@ Once the application is running, you can interact with it using the following HT
 
 ---
 
+## 📸 Screenshot of MongoDB
+
+<div class="image-container">
+      <img alt="mongodb" src="https://github.com/user-attachments/assets/518037a4-eb17-407b-8c86-70d86e3bf5ce" width="500" height="300"/>
+</div>
+
+---
 
